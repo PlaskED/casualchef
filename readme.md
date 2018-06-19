@@ -56,7 +56,13 @@ python3 run.py
 ## Running the frontend server
 Standing in /casualchef_react
 
-Run the front-end react server with
+First install all dependencies with
+
+```
+npm install
+```
+
+Now you can run the front-end react server with
 
 ```
 npm start
