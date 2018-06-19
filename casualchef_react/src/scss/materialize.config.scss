@@ -1,0 +1,74 @@
+$primary-color: color("teal", "lighten-1") !default;
+$primary-color-light: false !default;
+$primary-color-dark: false !default;
+@if not $primary-color-light {
+    $primary-color-light: lighten($primary-color, 15%);
+}
+@if not $primary-color-dark {
+    $primary-color-dark: darken($primary-color, 15%);
+}
+$secondary-color: color("light-blue", "lighten-1") !default;
+$success-color: color("green", "base") !default;
+$error-color: color("red", "base") !default;
+
+$link-color: color("light-blue", "darken-1") !default;
+
+blockquote {
+    @extend .color-bg;
+}
+
+i.upvote {
+    @extend .green-text;
+}
+
+i.downvote {
+    @extend .red-text;
+}
+
+i.voters {
+        @extend .light-blue-text;
+	@extend .text-lighten-1;
+}
+
+.color1 {
+    @extend .teal;
+    @extend .lighten-1;
+}
+
+.color1-text {
+    @extend .teal-text;
+    @extend .text-lighten-1;
+}
+
+.color2 {
+    @extend .light-blue;
+    @extend .lighten-1;
+}
+
+.color2-text {
+    @extend .light-blue-text;
+    @extend .text-lighten-1;
+}
+
+.color3 {
+    @extend .red;
+    @extend .lighten-1;
+}
+
+.color-bg {
+    @extend .grey;
+    @extend .lighten-5;
+}
+
+.text-error {
+    @extend .red-text;
+    @extend .text-darken-2;
+}
+
+.username {
+    font-weight: bold;
+    @extend .light-blue-text;
+    @extend .text-lighten-1;
+}
+
+
